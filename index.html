@@ -1,0 +1,550 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kasih Store — Insta360 &amp; DJI Cameras, Ampang KL</title>
+<meta name="description" content="Kasih Store catalog: Insta360 and DJI 360 cameras, action cameras and gimbal cameras with ready-made packages. Enquire on WhatsApp. Walk-in store in Ampang, Kuala Lumpur.">
+<meta property="og:title" content="Kasih Store — Camera Catalog">
+<meta property="og:description" content="Insta360 &amp; DJI cameras with ready-made packages. Enquire on WhatsApp.">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect x='2' y='7' width='28' height='20' rx='5' fill='%23111418'/%3E%3Ccircle cx='16' cy='17' r='5.5' fill='none' stroke='%23F97316' stroke-width='3'/%3E%3Crect x='10' y='3' width='12' height='4' rx='1.5' fill='%23111418'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+
+<script>
+/* =====================================================================
+   SETTINGS — the only part of this file you normally need to change.
+   ===================================================================== */
+window.KASIH = {
+  // Paste your published Google Sheet CSV link between the quotes.
+  // Leave empty ("") to use products.csv that sits next to this file.
+  SHEET_CSV_URL: "",
+
+  WHATSAPP_NUMBER: "60138886901",          // country code + number, no spaces or +
+  WHATSAPP_DISPLAY: "013-888 6901",
+  MAPS_URL: "https://maps.app.goo.gl/hJW3Bm8JYdkAtyFZ7",
+  ADDRESS: "G47, Jalan Pandan Prima 2, 55100 Kuala Lumpur (Lotus Ampang)",
+  HOURS: "[Opening hours]",
+  YOUTUBE_URL: "",
+  COMPANY_REG: "[Company registration no.]",
+
+  PAYMENT: [
+    "Promo prices are valid for Cash, Debit Card, Credit Card, SPayLater and QPay / Online Transfer.",
+    "Instalment options: AEON, Credit Card Instalment (Public Bank & Maybank only), SPayLater."
+  ],
+  WARRANTY: [
+    "Camera: 1 year warranty for manufacturer defects by the official Malaysia distributor. Human damage and water damage are not covered. Replacement or repair is at the brand's discretion. Keep your receipt (paper or photo).",
+    "Memory card: Lifetime warranty. Keep the packaging. Broken, scratched or discoloured cards are not accepted.",
+    "Battery: 1 year warranty. Swollen batteries are not accepted."
+  ]
+};
+</script>
+
+<style>
+:root{
+  --ink:#111418; --ink-2:#3D434C; --muted:#5B6270; --line:#E1E4E8; --line-2:#C5C9D0;
+  --bg:#F2F3F5; --card:#FFFFFF; --accent:#C2410C; --accent-dk:#9A3412; --ok:#1F6F43; --bad:#B42318;
+  --display:'Space Grotesk', system-ui, sans-serif; --body:'IBM Plex Sans', system-ui, sans-serif;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--body);font-size:16px;line-height:1.5;-webkit-font-smoothing:antialiased}
+a{color:var(--ink)} a:hover{color:var(--accent)}
+img{max-width:100%;display:block}
+.wrap{max-width:1280px;margin:0 auto;padding:0 20px}
+h1,h2,h3{font-family:var(--display);letter-spacing:-0.02em;margin:0}
+[hidden]{display:none!important}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:46px;padding:12px 22px;border-radius:999px;font:600 16px var(--body);text-decoration:none;cursor:pointer;border:1.5px solid var(--ink);background:var(--card);color:var(--ink);text-align:center}
+.btn:hover{color:var(--ink);background:#E9EBEE}
+.btn-dark{background:var(--ink);color:#fff} .btn-dark:hover{background:#2A2F36;color:#fff}
+.btn-accent{background:var(--accent);border-color:var(--accent);color:#fff} .btn-accent:hover{background:var(--accent-dk);border-color:var(--accent-dk);color:#fff}
+.eyebrow{font-size:14px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--accent)}
+.ph{background-color:#E4E6EA;background-image:repeating-linear-gradient(135deg,rgba(17,20,24,.05) 0 10px,transparent 10px 20px);display:flex;align-items:center;justify-content:center;color:var(--muted);font-size:14px;font-weight:500;text-align:center;padding:12px;width:100%;height:100%}
+:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+
+header.site{background:var(--ink);color:#fff;position:sticky;top:0;z-index:20}
+header.site .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:10px 16px;padding-top:12px;padding-bottom:12px}
+.logo{display:flex;align-items:center;gap:10px;color:#fff;text-decoration:none} .logo:hover{color:#fff}
+.logo span{font:700 22px var(--display);letter-spacing:-.02em}
+nav.main{display:flex;flex-wrap:wrap}
+nav.main a{color:#fff;text-decoration:none;padding:12px}
+nav.main a:hover{color:#FDBA8C}
+@media (max-width:760px){ nav.main{display:none} header.site .btn{display:none} }
+
+.hero{display:flex;flex-wrap:wrap;gap:36px;align-items:center;padding:48px 0 40px}
+.hero-copy{flex:1 1 480px;min-width:0;display:flex;flex-direction:column;gap:18px}
+.hero h1{font-size:clamp(36px,6vw,58px);line-height:1.04;letter-spacing:-.035em}
+.hero p{margin:0;font-size:18px;color:var(--ink-2);max-width:560px}
+.hero-media{flex:1 1 380px;min-width:0;height:340px;border-radius:20px;overflow:hidden;background:#fff}
+.hero-media img{width:100%;height:100%;object-fit:contain}
+.row{display:flex;flex-wrap:wrap;gap:12px}
+
+.brands{background:var(--card);border-top:1px solid #D9DCE1;border-bottom:1px solid #D9DCE1}
+.brands .wrap{display:flex;flex-wrap:wrap;align-items:center;gap:10px 36px;padding-top:20px;padding-bottom:20px}
+.brands small{font-size:13px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+.brands b{font:700 22px var(--display)}
+
+#catalog{padding:52px 0;display:flex;flex-direction:column;gap:22px;scroll-margin-top:70px}
+.cat-head{display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:18px}
+.cat-head h2{font-size:40px}
+.count{color:var(--muted)}
+.controls{display:flex;flex-wrap:wrap;gap:12px;align-items:flex-end}
+.field{display:flex;flex-direction:column;gap:6px}
+.field label{font-size:13px;font-weight:600;color:var(--ink-2)}
+.field input,.field select{font:inherit;padding:11px 14px;border-radius:10px;border:1.5px solid var(--line-2);background:var(--card);min-height:46px;color:var(--ink)}
+.field input{width:280px;max-width:100%}
+@media (max-width:560px){ .controls{width:100%} .field{flex:1 1 140px} .field input{width:100%} }
+.chips{display:flex;flex-wrap:wrap;gap:10px}
+.chip{font:600 15px var(--body);padding:10px 18px;min-height:44px;border-radius:999px;cursor:pointer;border:1.5px solid var(--ink);background:var(--card);color:var(--ink)}
+.chip[aria-pressed="true"]{background:var(--ink);color:#fff}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:20px}
+@media (max-width:560px){ .grid.products{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px} }
+.card{background:var(--card);border:1px solid var(--line);border-radius:16px;overflow:hidden;display:flex;flex-direction:column;text-decoration:none;color:var(--ink);transition:transform .15s, box-shadow .15s}
+a.card:hover{color:var(--ink);transform:translateY(-2px);box-shadow:0 8px 24px rgba(17,20,24,.10)}
+.card .media{aspect-ratio:1/1;position:relative;background:#fff}
+.card .media img{width:100%;height:100%;object-fit:contain}
+.tag{position:absolute;top:10px;left:10px;background:var(--ink);color:#fff;font-size:12px;font-weight:600;letter-spacing:.03em;padding:5px 10px;border-radius:999px}
+.card .body{padding:16px;display:flex;flex-direction:column;gap:4px;flex:1}
+.brand{font-size:13px;font-weight:600;color:var(--muted);letter-spacing:.04em;text-transform:uppercase}
+.card h3{font-size:21px;line-height:1.2}
+.from{margin-top:auto;padding-top:10px;color:var(--ink-2);font-size:14px}
+.from b{font:700 21px var(--display);color:var(--ink);display:block}
+.more{font-weight:600;color:var(--accent);font-size:15px;padding-top:8px}
+@media (max-width:560px){ .card .body{padding:12px} .card h3{font-size:16px} .from b{font-size:17px} }
+.empty{grid-column:1/-1;background:var(--card);border:1px dashed var(--line-2);border-radius:16px;padding:40px;text-align:center;color:var(--ink-2)}
+
+/* product page */
+#product{padding:24px 0 60px;display:flex;flex-direction:column;gap:28px}
+.crumbs{font-size:15px;display:flex;gap:8px;flex-wrap:wrap;align-items:center;color:var(--muted)}
+.crumbs a{font-weight:600}
+.p-top{display:flex;flex-wrap:wrap;gap:32px;align-items:stretch}
+.p-cover{flex:1 1 420px;min-width:0;border-radius:20px;overflow:hidden;background:#fff;max-height:460px;aspect-ratio:4/3}
+.p-cover img{width:100%;height:100%;object-fit:contain}
+.p-info{flex:1 1 380px;min-width:0;display:flex;flex-direction:column;gap:14px;justify-content:center}
+.p-info h1{font-size:clamp(34px,5vw,52px);line-height:1.04;letter-spacing:-.03em}
+.p-from{font-size:17px;color:var(--ink-2)} .p-from b{font:700 30px var(--display);color:var(--ink)}
+details.info{background:var(--card);border:1px solid var(--line);border-radius:12px}
+details.info summary{cursor:pointer;padding:14px 16px;font-weight:600;min-height:44px;list-style-position:inside}
+details.info ul{margin:0;padding:0 16px 14px 34px;display:flex;flex-direction:column;gap:6px;color:var(--ink-2);font-size:15px}
+.pk-head{display:flex;flex-wrap:wrap;gap:14px;align-items:flex-end;justify-content:space-between}
+.pk-head h2{font-size:32px}
+.pk{background:var(--card);border:1px solid var(--line);border-radius:16px;overflow:hidden;display:flex;flex-direction:column;scroll-margin-top:80px}
+.pk:target{outline:3px solid var(--accent)}
+.pk .media{aspect-ratio:1/1;background:#fff;border:0;padding:0;cursor:zoom-in;width:100%;display:block}
+.pk .media img{width:100%;height:100%;object-fit:contain}
+.pk .body{padding:18px;display:flex;flex-direction:column;gap:10px;flex:1}
+.pk h3{font-size:22px}
+.price-line{display:flex;flex-wrap:wrap;align-items:baseline;gap:6px 12px}
+.price{font:700 26px var(--display)}
+.price.ask{font-size:18px;color:var(--ink-2)}
+.was{color:var(--muted);text-decoration:line-through;font-size:15px}
+.save{background:#FDE7DB;color:#7C2D12;font-size:13px;font-weight:600;padding:3px 9px;border-radius:999px}
+.note{align-self:flex-start;background:#FFF4E5;color:#5C3B00;font-size:13px;font-weight:600;padding:4px 10px;border-radius:999px}
+.incl{margin:0;padding-left:20px;color:var(--ink-2);font-size:15px;display:flex;flex-direction:column;gap:3px}
+.incl li.extra{display:none}
+.pk.open .incl li.extra{display:list-item}
+.toggle{align-self:flex-start;background:none;border:0;padding:8px 0;min-height:40px;font:600 15px var(--body);color:var(--accent);cursor:pointer}
+.pk .actions{margin-top:auto;padding-top:6px;display:flex;gap:8px}
+.pk .actions .btn{flex:1;border-radius:12px}
+.share{border-radius:12px;padding:12px 14px}
+
+.services{background:var(--ink);color:#fff}
+.services .wrap{padding-top:52px;padding-bottom:52px;display:flex;flex-direction:column;gap:26px}
+.services h2{font-size:34px}
+.svc-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:18px}
+.svc{border:1px solid #3A3F47;border-radius:16px;padding:22px;display:flex;flex-direction:column;gap:10px}
+.svc h3{font:600 19px var(--body);letter-spacing:0}
+.svc p,.svc li{margin:0;color:#C9CDD4}
+.svc ul{margin:0;padding-left:18px;display:flex;flex-direction:column;gap:6px}
+.svc a{color:#fff}
+
+.visit{display:flex;flex-wrap:wrap;gap:32px;padding:52px 0;scroll-margin-top:70px}
+.visit .copy{flex:1 1 400px;min-width:0;display:flex;flex-direction:column;gap:14px}
+.visit h2{font-size:34px}
+.visit p{margin:0;font-size:17px;color:var(--ink-2)}
+.visit .media{flex:1 1 400px;min-width:0;min-height:260px;border-radius:20px;overflow:hidden}
+footer{border-top:1px solid #D9DCE1}
+footer .wrap{padding-top:22px;padding-bottom:96px;display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px;font-size:14px;color:var(--muted)}
+
+.fab{position:fixed;right:18px;bottom:18px;z-index:30;width:58px;height:58px;border-radius:50%;background:#1F8F4E;color:#fff;display:flex;align-items:center;justify-content:center;box-shadow:0 6px 18px rgba(0,0,0,.25)}
+.fab:hover{color:#fff;background:#18733F}
+.toast{position:fixed;left:50%;bottom:24px;transform:translateX(-50%);background:var(--ink);color:#fff;padding:12px 18px;border-radius:999px;font-weight:600;z-index:40;display:none}
+
+dialog{border:0;border-radius:16px;padding:0;width:min(900px,calc(100% - 24px));max-height:calc(100% - 24px);background:#fff}
+dialog::backdrop{background:rgba(17,20,24,.75)}
+dialog img{width:100%;height:auto;max-height:calc(100vh - 60px);object-fit:contain}
+.close{position:absolute;top:10px;right:10px;width:44px;height:44px;border-radius:50%;border:0;background:rgba(255,255,255,.95);cursor:pointer;display:flex;align-items:center;justify-content:center;box-shadow:0 1px 4px rgba(0,0,0,.25)}
+.notice{background:#FFF4E5;border:1px solid #F5C27A;color:#5C3B00;border-radius:12px;padding:12px 16px;font-size:14px}
+</style>
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap">
+    <a class="logo" href="#" aria-label="Kasih Store home">
+      <svg width="32" height="32" viewBox="0 0 32 32" aria-hidden="true"><rect x="2" y="7" width="28" height="20" rx="5" fill="none" stroke="#fff" stroke-width="2"/><circle cx="16" cy="17" r="5.5" fill="none" stroke="#F97316" stroke-width="2.5"/><rect x="10" y="3" width="12" height="4" rx="1.5" fill="#fff"/></svg>
+      <span>Kasih Store</span>
+    </a>
+    <nav class="main" aria-label="Main">
+      <a href="#catalog" data-home>Catalog</a>
+      <a href="#services" data-home>Payment &amp; warranty</a>
+      <a href="#visit" data-home>Visit us</a>
+    </nav>
+    <a class="btn btn-accent" data-wa href="#">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-12.5 7.4L3 20.5l1.6-5.3A8.4 8.4 0 1 1 21 11.5z"/></svg>
+      <span data-wa-display>WhatsApp</span>
+    </a>
+  </div>
+</header>
+
+<main>
+  <!-- ============ HOME ============ -->
+  <div id="home">
+    <section class="wrap hero">
+      <div class="hero-copy">
+        <span class="eyebrow">Insta360 &amp; DJI · Ampang, Kuala Lumpur</span>
+        <h1>Find the right camera — and the right package.</h1>
+        <p>360 cameras, action cams and gimbal cameras, each with ready-made bundles for riding, diving, vlogging and travel. WhatsApp us for stock and instalment options, or drop by the store to try before you buy.</p>
+        <div class="row">
+          <a class="btn btn-dark" href="#catalog">Browse cameras</a>
+          <a class="btn" data-maps href="#">Get directions</a>
+        </div>
+      </div>
+      <div class="hero-media" id="hero-media"><div class="ph">Kasih Store</div></div>
+    </section>
+
+    <section class="brands" aria-label="Brands we carry">
+      <div class="wrap"><small>Brands we carry</small><b>Insta360</b><b>DJI</b><b>SanDisk</b></div>
+    </section>
+
+    <section class="wrap" id="catalog" aria-labelledby="catalog-title">
+      <div class="cat-head">
+        <div>
+          <h2 id="catalog-title">Catalog</h2>
+          <div class="count" id="count" aria-live="polite">Loading…</div>
+        </div>
+        <div class="controls">
+          <div class="field">
+            <label for="q">Search cameras or packages</label>
+            <input id="q" type="search" placeholder="e.g. X5, motor, dive, vlog" autocomplete="off">
+          </div>
+          <div class="field">
+            <label for="sort">Sort by</label>
+            <select id="sort">
+              <option value="featured">Featured</option>
+              <option value="price-asc">Price: low to high</option>
+              <option value="price-desc">Price: high to low</option>
+              <option value="name">Name A–Z</option>
+            </select>
+          </div>
+        </div>
+      </div>
+      <div class="notice" id="notice" hidden></div>
+      <div class="chips" id="chips" role="group" aria-label="Filter by type"></div>
+      <div class="grid products" id="grid"></div>
+    </section>
+  </div>
+
+  <!-- ============ PRODUCT PAGE ============ -->
+  <section class="wrap" id="product" hidden aria-live="polite"></section>
+
+  <!-- ============ SHARED SECTIONS ============ -->
+  <section class="services" id="services">
+    <div class="wrap">
+      <h2>Buying from Kasih Store</h2>
+      <div class="svc-grid">
+        <div class="svc">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20M6 15h4"/></svg>
+          <h3>Payment &amp; instalments</h3>
+          <ul id="pay-list"></ul>
+        </div>
+        <div class="svc">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l8 3v6c0 4.5-3.4 8-8 9-4.6-1-8-4.5-8-9V6z"/><path d="M9 12l2 2 4-4"/></svg>
+          <h3>Warranty</h3>
+          <ul id="war-list"></ul>
+        </div>
+        <div class="svc">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21c1.5-4 4.5-6 8-6s6.5 2 8 6"/></svg>
+          <h3>Walk-in consultation</h3>
+          <p>Not sure which camera or package suits you? Try them in store and we'll help you pick. Corporate quotations available too.</p>
+          <p id="yt-p">Setup guides on our YouTube channel. <a id="yt-link" href="#">Watch</a></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="wrap visit" id="visit">
+    <div class="copy">
+      <h2>Visit the store</h2>
+      <p id="address"></p>
+      <p id="hours"></p>
+      <div class="row" style="padding-top:6px">
+        <a class="btn btn-accent" data-wa href="#"><span data-wa-display>WhatsApp</span></a>
+        <a class="btn" data-maps href="#">Open in Google Maps</a>
+      </div>
+    </div>
+    <div class="media"><div class="ph">[Storefront photo — add images/store.jpg]</div></div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© <span id="year"></span> Kasih Store · <span id="reg"></span></span>
+    <span>Prices and stock change often — please confirm on WhatsApp before visiting.</span>
+  </div>
+</footer>
+
+<a class="fab" data-wa href="#" aria-label="Chat with Kasih Store on WhatsApp">
+  <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-12.5 7.4L3 20.5l1.6-5.3A8.4 8.4 0 1 1 21 11.5z"/></svg>
+</a>
+<div class="toast" id="toast" role="status"></div>
+
+<dialog id="zoom" aria-label="Package photo">
+  <div style="position:relative">
+    <button class="close" type="button" id="zoom-close" aria-label="Close photo">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#111418" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
+    </button>
+    <img id="zoom-img" alt="">
+  </div>
+</dialog>
+
+<script>
+(function(){
+  var C = window.KASIH;
+  var $ = function(s, r){ return (r||document).querySelector(s); };
+  var $$ = function(s, r){ return Array.prototype.slice.call((r||document).querySelectorAll(s)); };
+  function esc(s){ return String(s == null ? "" : s).replace(/[&<>"']/g, function(c){ return ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"})[c]; }); }
+  function waLink(text){ return "https://wa.me/" + C.WHATSAPP_NUMBER + (text ? "?text=" + encodeURIComponent(text) : ""); }
+  function slug(s){ return String(s).toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, ""); }
+  function toNumber(p){ var n = parseFloat(String(p || "").replace(/[^0-9.]/g, "")); return isNaN(n) ? null : n; }
+  function rm(n){ return "RM " + n.toLocaleString("en-MY", { maximumFractionDigits: 2 }); }
+  function fixImage(url){
+    if (!url) return "";
+    var m = url.match(/drive\.google\.com\/(?:file\/d\/|open\?id=|uc\?(?:export=\w+&)?id=)([\w-]+)/);
+    return m ? "https://lh3.googleusercontent.com/d/" + m[1] + "=w1200" : url;
+  }
+  function imgTag(src, alt, fallback){
+    if (!src) return '<div class="ph">' + esc(fallback || "Photo coming soon") + '</div>';
+    return '<img loading="lazy" referrerpolicy="no-referrer" src="' + esc(src) + '" alt="' + esc(alt) + '" data-fallback="' + esc(fallback || "Photo coming soon") + '">';
+  }
+  // swap any broken image for a neat placeholder
+  document.addEventListener("error", function(e){
+    var t = e.target;
+    if (t.tagName === "IMG" && t.hasAttribute("data-fallback")){
+      var d = document.createElement("div"); d.className = "ph"; d.textContent = t.getAttribute("data-fallback");
+      var btn = t.closest("button.media"); if (btn) btn.disabled = true;
+      t.replaceWith(d);
+    }
+  }, true);
+
+  // ---- static settings
+  $$("[data-wa]").forEach(function(a){ a.href = waLink("Hi Kasih Store, saya ada soalan."); a.target = "_blank"; a.rel = "noopener"; });
+  $$("[data-wa-display]").forEach(function(s){ s.textContent = "WhatsApp " + C.WHATSAPP_DISPLAY; });
+  $$("[data-maps]").forEach(function(a){ a.href = C.MAPS_URL; a.target = "_blank"; a.rel = "noopener"; });
+  $("#address").textContent = C.ADDRESS;
+  $("#hours").textContent = C.HOURS;
+  $("#reg").textContent = C.COMPANY_REG;
+  $("#year").textContent = new Date().getFullYear();
+  $("#pay-list").innerHTML = C.PAYMENT.map(function(t){ return "<li>" + esc(t) + "</li>"; }).join("");
+  $("#war-list").innerHTML = C.WARRANTY.map(function(t){ return "<li>" + esc(t) + "</li>"; }).join("");
+  if (C.YOUTUBE_URL){ $("#yt-link").href = C.YOUTUBE_URL; $("#yt-link").target = "_blank"; $("#yt-link").rel = "noopener"; } else { $("#yt-p").remove(); }
+  (function(){ var img = new Image(); img.onload = function(){ var box = $(".visit .media"); box.innerHTML = ""; img.style.cssText = "width:100%;height:100%;object-fit:cover"; box.appendChild(img); }; img.src = "images/store.jpg"; })();
+
+  // ---- CSV
+  function parseCSV(text){
+    var rows = [], row = [], cell = "", q = false, i, c;
+    text = text.replace(/^﻿/, "");
+    for (i = 0; i < text.length; i++){
+      c = text[i];
+      if (q){ if (c === '"'){ if (text[i+1] === '"'){ cell += '"'; i++; } else q = false; } else cell += c; }
+      else if (c === '"') q = true;
+      else if (c === ','){ row.push(cell); cell = ""; }
+      else if (c === '\n' || c === '\r'){ if (c === '\r' && text[i+1] === '\n') i++; row.push(cell); rows.push(row); row = []; cell = ""; }
+      else cell += c;
+    }
+    if (cell !== "" || row.length){ row.push(cell); rows.push(row); }
+    rows = rows.filter(function(r){ return r.some(function(x){ return x.trim() !== ""; }); });
+    if (!rows.length) return [];
+    var head = rows[0].map(function(h){ return h.trim().toLowerCase().replace(/\s+/g, "_"); });
+    return rows.slice(1).map(function(r){ var o = {}; head.forEach(function(h, j){ o[h] = (r[j] || "").trim(); }); return o; });
+  }
+
+  // ---- build products from package rows
+  var products = [], bySlug = {};
+  function build(rows){
+    products = []; bySlug = {};
+    rows.forEach(function(r, i){
+      if (!r.product || /^(yes|y|true|1)$/i.test(r.hide || "")) return;
+      var s = slug(r.product), p = bySlug[s];
+      if (!p){
+        p = bySlug[s] = { slug: s, order: products.length, name: r.product, brand: r.brand || "", category: r.category || "Other", cover: "", packages: [] };
+        products.push(p);
+      }
+      if (!p.cover && r.cover) p.cover = fixImage(r.cover);
+      if (r.package){
+        p.packages.push({
+          id: slug(r.package) || ("p" + i), name: r.package, price: toNumber(r.price), was: toNumber(r.normal_price),
+          includes: (r.includes || "").split(/\s*\|\s*|\n/).filter(Boolean), note: r.note || "", image: fixImage(r.image)
+        });
+      }
+    });
+    products.forEach(function(p){
+      var prices = p.packages.map(function(k){ return k.price; }).filter(function(x){ return x != null; });
+      p.min = prices.length ? Math.min.apply(null, prices) : null;
+      if (!p.cover){ var f = p.packages.filter(function(k){ return k.image; })[0]; p.cover = f ? f.image : ""; }
+      p.packages.sort(function(a, b){ return (a.price == null) - (b.price == null) || (a.price || 0) - (b.price || 0); });
+      p.search = (p.name + " " + p.brand + " " + p.category + " " + p.packages.map(function(k){ return k.name + " " + k.includes.join(" "); }).join(" ")).toLowerCase();
+    });
+  }
+
+  // ---- home
+  var cat = "All";
+  function renderChips(){
+    var cats = ["All"];
+    products.forEach(function(p){ if (cats.indexOf(p.category) < 0) cats.push(p.category); });
+    $("#chips").innerHTML = cats.map(function(c){ return '<button type="button" class="chip" aria-pressed="' + (c === cat) + '" data-cat="' + esc(c) + '">' + esc(c) + '</button>'; }).join("");
+  }
+  function renderGrid(){
+    var q = $("#q").value.trim().toLowerCase(), sort = $("#sort").value;
+    var words = q.split(/\s+/).filter(Boolean);
+    var list = products.filter(function(p){
+      return (cat === "All" || p.category === cat) && words.every(function(w){ return p.search.indexOf(w) >= 0; });
+    });
+    list.sort(function(a, b){
+      if (sort === "name") return a.name.localeCompare(b.name);
+      if (sort === "price-asc") return (a.min || 1e9) - (b.min || 1e9);
+      if (sort === "price-desc") return (b.min || 0) - (a.min || 0);
+      return a.order - b.order;
+    });
+    $("#count").textContent = list.length + (list.length === 1 ? " product" : " products") + (cat === "All" ? "" : " · " + cat);
+    if (!list.length){
+      $("#grid").innerHTML = '<div class="empty">Nothing matches that search. <a target="_blank" rel="noopener" href="' + esc(waLink("Hi Kasih Store, ada tak " + (q || "barang ini") + "?")) + '">Ask us on WhatsApp</a> — we may have it in store.</div>';
+      return;
+    }
+    $("#grid").innerHTML = list.map(function(p){
+      return '<a class="card" href="#/' + p.slug + (q ? "?q=" + encodeURIComponent(q) : "") + '">' +
+        '<div class="media">' + imgTag(p.cover, p.name, p.name) + '<span class="tag">' + esc(p.category) + '</span></div>' +
+        '<div class="body"><span class="brand">' + esc(p.brand) + '</span><h3>' + esc(p.name) + '</h3>' +
+        '<div class="from">' + (p.min != null ? 'From<b>' + rm(p.min) + '</b>' : '<b>Ask for price</b>') + p.packages.length + (/accessor/i.test(p.category) ? ' items' : (p.packages.length === 1 ? ' package' : ' packages')) + '</div>' +
+        '<span class="more">' + (/accessor/i.test(p.category) ? 'See items →' : 'See packages →') + '</span></div></a>';
+    }).join("");
+  }
+  $("#chips").addEventListener("click", function(e){
+    var b = e.target.closest(".chip"); if (!b) return;
+    cat = b.getAttribute("data-cat"); renderChips(); renderGrid();
+  });
+  $("#q").addEventListener("input", renderGrid);
+  $("#sort").addEventListener("change", renderGrid);
+
+  // ---- product page
+  var variant = "All";
+  function variantOf(name){ var m = name.match(/\(([^)]+)\)\s*$/); return m ? m[1].toUpperCase() : ""; }
+  function renderProduct(p, q){
+    var variants = []; p.packages.forEach(function(k){ var v = variantOf(k.name); if (v && variants.indexOf(v) < 0) variants.push(v); });
+    var showVariants = !/accessor/i.test(p.category) && variants.length > 1 && variants.length < p.packages.length;
+    if (variants.indexOf(variant) < 0) variant = "All";
+    var words = (q || "").toLowerCase().split(/\s+/).filter(Boolean);
+    var pkgs = p.packages.filter(function(k){
+      if (variant !== "All" && variantOf(k.name) !== variant && variantOf(k.name)) return false;
+      if (!words.length) return true;
+      var hay = (k.name + " " + k.includes.join(" ")).toLowerCase();
+      return words.every(function(w){ return hay.indexOf(w) >= 0; });
+    });
+    var isAcc = /accessor/i.test(p.category);
+    var unit = isAcc ? "items" : "packages";
+    var el = $("#product");
+    el.innerHTML =
+      '<nav class="crumbs" aria-label="Breadcrumb"><a href="#catalog">← All cameras</a><span aria-hidden="true">/</span><span>' + esc(p.category) + '</span></nav>' +
+      '<div class="p-top">' +
+        '<div class="p-cover">' + imgTag(p.cover, p.name, p.name) + '</div>' +
+        '<div class="p-info">' +
+          '<span class="brand">' + esc(p.brand) + ' · ' + esc(p.category) + '</span>' +
+          '<h1>' + esc(p.name) + '</h1>' +
+          '<div class="p-from">' + (p.min != null ? (isAcc ? 'From ' : 'Packages from ') + '<b>' + rm(p.min) + '</b>' : '<b>Ask for price</b>') + ' · ' + p.packages.length + ' ' + unit + '</div>' +
+          '<div class="row"><a class="btn btn-accent" target="_blank" rel="noopener" href="' + esc(waLink("Hi Kasih Store, saya berminat dengan " + p.name + ". Pakej mana yang sesuai untuk saya?")) + '">Ask which package suits me</a>' +
+          '<button class="btn share" type="button" id="share">Share this page</button></div>' +
+          '<details class="info"><summary>Payment &amp; instalments</summary><ul>' + C.PAYMENT.map(function(t){ return "<li>" + esc(t) + "</li>"; }).join("") + '</ul></details>' +
+          '<details class="info"><summary>Warranty</summary><ul>' + C.WARRANTY.map(function(t){ return "<li>" + esc(t) + "</li>"; }).join("") + '</ul></details>' +
+        '</div>' +
+      '</div>' +
+      '<div class="pk-head"><div><h2>' + (isAcc ? 'Items' : 'Packages') + '</h2><div class="count">' + (words.length ? 'Showing packages with "' + esc(q) + '" · <a href="#/' + p.slug + '">show all</a>' : 'Sorted from lowest price') + '</div></div>' +
+        (showVariants ? '<div class="chips" role="group" aria-label="Version">' + ["All"].concat(variants).map(function(v){ return '<button type="button" class="chip" data-variant="' + esc(v) + '" aria-pressed="' + (v === variant) + '">' + esc(v === "All" ? "All versions" : v.charAt(0) + v.slice(1).toLowerCase()) + '</button>'; }).join("") + '</div>' : '') +
+      '</div>' +
+      '<div class="grid">' + (pkgs.length ? pkgs.map(function(k){
+        var LIMIT = 6, extra = k.includes.length - LIMIT;
+        var msg = "Hi Kasih Store, saya berminat dengan " + (isAcc ? k.name : p.name + " pakej " + k.name) + (k.price != null ? " (" + rm(k.price) + ")" : "") + ". Masih ada stok?";
+        return '<article class="pk" id="' + esc(k.id) + '">' +
+          (k.image ? '<button class="media" type="button" data-zoom="' + esc(k.image) + '" aria-label="Enlarge photo of ' + esc(k.name) + '">' + imgTag(k.image, p.name + " " + k.name + " package") + '</button>' : '') +
+          '<div class="body">' +
+            '<h3>' + esc(k.name) + '</h3>' +
+            '<div class="price-line">' + (k.price != null ? '<span class="price">' + rm(k.price) + '</span>' : '<span class="price ask">Ask for price</span>') +
+              (k.was && k.price && k.was > k.price ? '<span class="was">' + rm(k.was) + '</span><span class="save">Save ' + rm(k.was - k.price) + '</span>' : '') + '</div>' +
+            (k.note ? '<span class="note">' + esc(k.note) + '</span>' : '') +
+            (k.includes.length ? '<ul class="incl">' + k.includes.map(function(t, j){ return '<li' + (j >= LIMIT ? ' class="extra"' : '') + '>' + esc(t) + '</li>'; }).join("") + '</ul>' : '') +
+            (extra > 0 ? '<button type="button" class="toggle" data-more="' + extra + '" aria-expanded="false">+ ' + extra + ' more items</button>' : '') +
+            '<div class="actions"><a class="btn btn-accent" target="_blank" rel="noopener" href="' + esc(waLink(msg)) + '">Enquire on WhatsApp</a></div>' +
+          '</div></article>';
+      }).join("") : '<div class="empty">No packages match. <a href="#/' + p.slug + '">Show all packages</a></div>') + '</div>';
+    document.title = p.name + " — Kasih Store";
+  }
+  $("#product").addEventListener("click", function(e){
+    var t;
+    if ((t = e.target.closest("[data-variant]"))){ variant = t.getAttribute("data-variant"); route(true); return; }
+    if ((t = e.target.closest(".toggle"))){
+      var card = t.closest(".pk"), open = card.classList.toggle("open");
+      t.setAttribute("aria-expanded", open); t.textContent = open ? "Show less" : "+ " + t.getAttribute("data-more") + " more items"; return;
+    }
+    if ((t = e.target.closest("[data-zoom]"))){ $("#zoom-img").src = t.getAttribute("data-zoom"); $("#zoom-img").alt = t.getAttribute("aria-label").replace(/^Enlarge photo of /, ""); $("#zoom").showModal(); return; }
+    if (e.target.closest("#share")){
+      var url = location.href.split("?")[0];
+      if (navigator.share){ navigator.share({ title: document.title, url: url }).catch(function(){}); }
+      else if (navigator.clipboard){ navigator.clipboard.writeText(url).then(function(){ toast("Link copied"); }); }
+    }
+  });
+  $("#zoom-close").addEventListener("click", function(){ $("#zoom").close(); });
+  $("#zoom").addEventListener("click", function(e){ if (e.target === $("#zoom")) $("#zoom").close(); });
+  function toast(t){ var el = $("#toast"); el.textContent = t; el.style.display = "block"; setTimeout(function(){ el.style.display = "none"; }, 1800); }
+
+  // ---- routing: #/product-slug  (anything else = home)
+  var homeTitle = document.title;
+  function route(keepScroll){
+    var h = location.hash, m = h.match(/^#\/([^?]+)(?:\?q=(.*))?$/);
+    var p = m && bySlug[decodeURIComponent(m[1])];
+    if (p){
+      $("#home").hidden = true; $("#product").hidden = false;
+      renderProduct(p, m[2] ? decodeURIComponent(m[2]) : "");
+      if (!keepScroll) window.scrollTo(0, 0);
+    } else {
+      $("#product").hidden = true; $("#home").hidden = false; document.title = homeTitle;
+      if (m) { location.replace("#catalog"); }
+    }
+  }
+  window.addEventListener("hashchange", function(){ route(false); });
+  // in-page links back to home sections
+  $$("[data-home], .crumbs a").forEach(function(a){ a.addEventListener("click", function(){ $("#product").hidden = true; $("#home").hidden = false; }); });
+
+  // ---- load: Google Sheet -> products.csv
+  function get(url){
+    return fetch(url, { cache: "no-store" }).then(function(r){ if (!r.ok) throw new Error("HTTP " + r.status); return r.text(); })
+      .then(function(t){ if (/^\s*</.test(t)) throw new Error("Not a CSV"); var rows = parseCSV(t); if (!rows.length) throw new Error("Empty"); return rows; });
+  }
+  function start(rows){
+    build(rows);
+    var hero = products.filter(function(p){ return p.cover; })[0];
+    if (hero) $("#hero-media").innerHTML = imgTag(hero.cover, hero.name, "Kasih Store");
+    renderChips(); renderGrid(); route(false);
+  }
+  function fail(){
+    var n = $("#notice"); n.hidden = false;
+    n.textContent = location.protocol === "file:" ? "Preview mode: open this site through Vercel (or a local server) to load the product list." : "We couldn't load the product list right now. Please refresh, or WhatsApp us for prices.";
+    $("#count").textContent = "";
+  }
+  (C.SHEET_CSV_URL ? get(C.SHEET_CSV_URL) : Promise.reject())
+    .catch(function(err){ if (C.SHEET_CSV_URL) console.warn("Google Sheet could not be loaded, using products.csv", err); return get("products.csv"); })
+    .then(start, fail);
+})();
+</script>
+</body>
+</html>
