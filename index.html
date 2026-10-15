@@ -532,7 +532,7 @@ dialog img{width:100%;height:auto;max-height:calc(100vh - 60px);object-fit:conta
   function start(rows){
     build(rows);
     var hero = products.filter(function(p){ return p.cover; })[0];
-    if (hero) $("#hero-media").innerHTML = imgTag(hero.cover, hero.name, "Kasih Store");
+        $("#hero-media").innerHTML = '<img src="images/hero.png" alt="Kasih Store">';
     renderChips(); renderGrid(); route(false);
   }
   function fail(){
